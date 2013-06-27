@@ -17,6 +17,10 @@ namespace PE37
             int sum = truncatablePrimes.Sum();
             DateTime end = DateTime.Now;
             TimeSpan span = end - start;
+            Console.WriteLine(string.Join(Environment.NewLine, truncatablePrimes));
+            Console.WriteLine(string.Format("Sum {0}", sum));
+            Console.WriteLine(string.Format("Elapsed Milliseconds {0}", span.TotalMilliseconds));
+            Console.ReadLine();
         }
     }
 }
